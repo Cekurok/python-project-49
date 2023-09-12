@@ -1,3 +1,5 @@
 /.venv
 /.pytest_cache
 /dist
+/brain_games/__pycache__
+/brain_games/scripts/__pycache__
