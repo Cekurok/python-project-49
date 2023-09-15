@@ -12,7 +12,7 @@ def get_answer():
     res_str = ""
     first_number = random.randint(1, 30)
     second_number = random.randint(2, 9)
-    empty_symbol = random.randint(1, 9)
+    empty_symbol = random.randint(0, 9)
     for i in range(first_number, 500, second_number):
         if len(res) == empty_symbol:
             result = i
