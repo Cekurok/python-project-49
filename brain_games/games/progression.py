@@ -13,14 +13,14 @@ def get_answer():
     first_number = random.randint(1, 30)
     second_number = random.randint(2, 9)
     empty_symbol = random.randint(0, 9)
-    for i in range(first_number, 500, second_number):
+    for i in range(first_number, 200, second_number):
+        if len(res) == 9:
+            break
         if len(res) == empty_symbol:
             result = i
             res.append("..")
             continue
         res.append(i)
-        if len(res) == 9:
-            break
     for i in res:
         res_str = f"{res_str} {i}"
     print(f'Question: {res_str}')
