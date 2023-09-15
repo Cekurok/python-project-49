@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import random
+from random import randint
 import prompt
 
 
@@ -9,21 +9,16 @@ def get_rules():
 
 def get_answer():
     res = []
-    res_str = ""
-    first_number = random.randint(1, 30)
-    second_number = random.randint(2, 9)
-    empty_symbol = random.randint(0, 9)
-    for i in range(first_number, 200, second_number):
-        if len(res) == 9:
-            break
-        if len(res) == empty_symbol:
-            result = i
-            res.append("..")
-            continue
-        res.append(i)
-    for i in res:
-        res_str = f"{res_str} {i}"
-    print(f'Question: {res_str}')
+    initial_number, difference = randint(0, 50), randint(0, 50)
+    length = 10
+    for index in range(length):
+        initial_number += difference
+        res.append(initial_number)
+    random_index = randint(0, 9)
+    correct_answer = str(res[random_index])
+    res[random_index] = ".."
+    res = " ".join(str(i) for i in res)
+    print(f'Question: {res}')
     answer = prompt.string('Your answer: ')
-    is_true = int(answer) == result
-    return is_true, answer, result
+    is_true = answer == correct_answer
+    return is_true, answer, correct_answer
