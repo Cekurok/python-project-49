@@ -23,7 +23,7 @@ def get_answer():
             break
     for i in res:
         res_str = f"{res_str} {i}"
-    print(f'Question:  {res_str}')
+    print(f'Question: {res_str}')
     answer = prompt.string('Your answer: ')
     is_true = int(answer) == result
     return is_true, answer, result
