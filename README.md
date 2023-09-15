@@ -3,3 +3,6 @@
 
 ### brain-even gameplay:
 [![asciicast](https://asciinema.org/a/Pvb0d1CbNemQFVGtkNblClP9j.svg)](https://asciinema.org/a/Pvb0d1CbNemQFVGtkNblClP9j)
+
+### brain-calc gameplay:
+[![asciicast](https://asciinema.org/a/3qrAfNnegpvuefRbfPwnAZnK4.svg)](https://asciinema.org/a/3qrAfNnegpvuefRbfPwnAZnK4)

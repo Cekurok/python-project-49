@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import random
 import prompt
-from brain_games.cli import welcome_user
+from brain_games.cli import error_message, welcome_user
+from brain_games.cli import is_number_even
 
 
 def main():
@@ -18,17 +19,10 @@ def main():
             print('Correct!')
             i += 1
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {is_even}.")
+            error_message(answer, is_even)
             break
     if i == 3:
         print(f'Congratulations, {user_name}!')
-
-
-def is_number_even(num):
-    if num % 2 == 0:
-        return "yes"
-    else:
-        return "no"
 
 
 if __name__ == '__main__':
