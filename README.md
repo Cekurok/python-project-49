@@ -1,6 +1,23 @@
+# BRAIN GAMES
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Cekurok/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Cekurok/python-project-49/actions)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/44d5279d6374357b6f08/maintainability)](https://codeclimate.com/github/Cekurok/python-project-49/maintainability)
+
+## The package contains five simple mathematics quiz games:
+
+* Even check brain-even
+* Calculator brain-calc
+* Greatest common divider brain-gcd
+* Arithmetic progression brain-progression
+* Prime number brain-prime
+
+## Installation
+
+'poetry install'
+
+## How it works
 ### brain-even gameplay:
 [![asciicast](https://asciinema.org/a/Pvb0d1CbNemQFVGtkNblClP9j.svg)](https://asciinema.org/a/Pvb0d1CbNemQFVGtkNblClP9j)
 
