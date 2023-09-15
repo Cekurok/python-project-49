@@ -8,3 +8,6 @@
 [![asciicast](https://asciinema.org/a/3qrAfNnegpvuefRbfPwnAZnK4.svg)](https://asciinema.org/a/3qrAfNnegpvuefRbfPwnAZnK4)
 ### brain-gcd gameplay:
 [![asciicast](https://asciinema.org/a/4KF6ozkbXx5X930YlEQLlb5EF.svg)](https://asciinema.org/a/4KF6ozkbXx5X930YlEQLlb5EF)
+
+### brain-progression gameplay:
+[![asciicast](https://asciinema.org/a/7zxX2U5fDiNiQK7odzimgdJyT.svg)](https://asciinema.org/a/7zxX2U5fDiNiQK7odzimgdJyT)
