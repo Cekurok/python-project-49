@@ -8,13 +8,6 @@ def welcome_user():
     return user_name
 
 
-def is_number_even(num):
-    if num % 2 == 0:
-        return "yes"
-    else:
-        return "no"
-
-
 def error_message(you_text, correct_text):
     text = f"{you_text} is wrong answer ;(. Correct answer was {correct_text}."
     return text

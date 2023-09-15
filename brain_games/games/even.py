@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 import random
 import prompt
-from brain_games.cli import is_number_even
+
+
+def is_number_even(num):
+    if num % 2 == 0:
+        return "yes"
+    else:
+        return "no"
 
 
 def get_rules():
