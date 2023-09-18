@@ -1,5 +1,11 @@
 import prompt
-from brain_games.cli import welcome_user
+
+
+def welcome_user():
+    print('Welcome to the Brain Games!')
+    user_name = prompt.string('May I have your name? ')
+    print(f'Hello, {user_name}!')
+    return user_name
 
 
 def print_error_message(you_text, correct_text):
