@@ -16,7 +16,7 @@ def is_prime(num):
 
 
 def make_question():
-    even_number = get_random_number(finish=30)
+    even_number = get_random_number(start=2, finish=99)
     print(f'Question: {even_number}')
     answer = get_answer_by_user()
     result = is_prime(even_number)
