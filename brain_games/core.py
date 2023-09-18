@@ -2,7 +2,7 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-def error_message(you_text, correct_text):
+def print_error_message(you_text, correct_text):
     text = f"{you_text} is wrong answer ;(. Correct answer was {correct_text}."
     return text
 
@@ -12,7 +12,7 @@ def get_answer_by_user():
     return answer
 
 
-def expression_result(exp, first_number, second_number):
+def get_expression_result(exp, first_number, second_number):
     result = 0
     if exp == '+':
         result = first_number + second_number
@@ -33,7 +33,7 @@ def start_game(game):
             print('Correct!')
             COUNTER += 1
         else:
-            print(error_message(answer, result))
+            print(print_error_message(answer, result))
             print(f"Let's try again, {user_name}!")
             break
     if COUNTER == 3:

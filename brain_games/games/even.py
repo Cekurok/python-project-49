@@ -12,7 +12,7 @@ def is_number_even(num):
 def make_question():
     even_number = get_random_number(finish=20)
     print(f'Question: {even_number}')
-    answer = get_answer_by_user()
-    result = is_number_even(even_number)
-    is_valid_answer = answer == result
-    return is_valid_answer, answer, result
+    user_answer = get_answer_by_user()
+    correct_result = is_number_even(even_number)
+    is_valid_answer = user_answer == correct_result
+    return is_valid_answer, user_answer, correct_result

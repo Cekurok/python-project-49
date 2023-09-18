@@ -18,7 +18,7 @@ def make_question():
     first_number = get_random_number()
     second_number = get_random_number()
     print(f'Question: {first_number} {second_number}')
-    answer = get_answer_by_user()
-    result = gcd(first_number, second_number)
-    is_valid_answer = int(answer) == result
-    return is_valid_answer, answer, result
+    user_answer = get_answer_by_user()
+    correct_result = gcd(first_number, second_number)
+    is_valid_answer = int(user_answer) == correct_result
+    return is_valid_answer, user_answer, correct_result
