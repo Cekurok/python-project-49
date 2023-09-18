@@ -1,19 +1,19 @@
-#!/usr/bin/env python3
 import random
-import prompt
 from brain_games.cli import expression_result
+from brain_games.core import get_answer_by_user
+from brain_games.utils import get_random_number
 
 
-def get_rules():
-    return 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
+OPERATORS = ['+', '-', '*']
 
 
-def get_answer():
-    first_number = random.randint(1, 200)
-    second_number = random.randint(1, 200)
-    expression = ['-', '+', '*'][random.randint(0, 2)]
+def make_question():
+    first_number = get_random_number()
+    second_number = get_random_number()
+    expression = random.choices(OPERATORS)
     print(f'Question: {first_number} {expression} {second_number}')
-    answer = prompt.string('Your answer: ')
+    answer = get_answer_by_user()
     result = expression_result(expression, first_number, second_number)
-    is_true = int(answer) == result
-    return is_true, answer, result
+    is_valid_answer = int(answer) == result
+    return is_valid_answer, answer, result

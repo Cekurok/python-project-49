@@ -1,6 +1,8 @@
-#!/usr/bin/env python3
-import random
-import prompt
+from brain_games.core import get_answer_by_user
+from brain_games.utils import get_random_number
+
+
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(n):
@@ -10,18 +12,14 @@ def is_prime(n):
     return d == n
 
 
-def get_rules():
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
-
-def get_answer():
-    even_number = random.randint(1, 30)
+def make_question():
+    even_number = get_random_number(finish=30)
     print(f'Question: {even_number}')
-    answer = prompt.string('Your answer: ')
+    answer = get_answer_by_user()
     result = is_prime(even_number)
     if result:
         result = "yes"
     else:
         result = "no"
-    is_true = answer == result
-    return is_true, answer, result
+    is_valid_answer = answer == result
+    return is_valid_answer, answer, result

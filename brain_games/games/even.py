@@ -1,23 +1,18 @@
-#!/usr/bin/env python3
-import random
-import prompt
+from brain_games.core import get_answer_by_user
+from brain_games.utils import get_random_number
+
+
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_number_even(num):
-    if num % 2 == 0:
-        return "yes"
-    else:
-        return "no"
+    return "yes" if num % 2 == 0 else "no"
 
 
-def get_rules():
-    return 'Answer "yes" if the number is even, otherwise answer "no".'
-
-
-def get_answer():
-    even_number = random.randint(1, 20)
+def make_question():
+    even_number = get_random_number(finish=20)
     print(f'Question: {even_number}')
-    answer = prompt.string('Your answer: ')
+    answer = get_answer_by_user()
     result = is_number_even(even_number)
-    is_true = answer == result
-    return is_true, answer, result
+    is_valid_answer = answer == result
+    return is_valid_answer, answer, result

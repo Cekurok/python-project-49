@@ -1,15 +1,15 @@
-#!/usr/bin/env python3
 from random import randint
-import prompt
+from brain_games.core import get_answer_by_user
+from brain_games.utils import get_random_number
 
 
-def get_rules():
-    return 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 
 
-def get_answer():
+def make_question():
     res = []
-    initial_number, difference = randint(0, 50), randint(0, 50)
+    initial_number = get_random_number(start=0, finish=50)
+    difference = get_random_number(start=0, finish=50)
     length = 10
     for index in range(length):
         initial_number += difference
@@ -19,6 +19,6 @@ def get_answer():
     res[random_index] = ".."
     res = " ".join(str(i) for i in res)
     print(f'Question: {res}')
-    answer = prompt.string('Your answer: ')
-    is_true = answer == correct_answer
-    return is_true, answer, correct_answer
+    user_answer = get_answer_by_user()
+    is_valid_answer = user_answer == correct_answer
+    return is_valid_answer, user_answer, correct_answer

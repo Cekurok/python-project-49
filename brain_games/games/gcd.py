@@ -1,6 +1,8 @@
-#!/usr/bin/env python3
-import random
-import prompt
+from brain_games.core import get_answer_by_user
+from brain_games.utils import get_random_number
+
+
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(first_number, second_number):
@@ -12,15 +14,11 @@ def gcd(first_number, second_number):
     return second_number
 
 
-def get_rules():
-    return 'Find the greatest common divisor of given numbers.'
-
-
-def get_answer():
-    first_number = random.randint(1, 200)
-    second_number = random.randint(1, 200)
+def make_question():
+    first_number = get_random_number()
+    second_number = get_random_number()
     print(f'Question: {first_number} {second_number}')
-    answer = prompt.string('Your answer: ')
+    answer = get_answer_by_user()
     result = gcd(first_number, second_number)
-    is_true = int(answer) == result
-    return is_true, answer, result
+    is_valid_answer = int(answer) == result
+    return is_valid_answer, answer, result
