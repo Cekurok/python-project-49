@@ -1,4 +1,3 @@
-from random import randint
 from brain_games.core import get_answer_by_user
 from brain_games.utils import get_random_number
 
@@ -14,7 +13,7 @@ def make_question():
     for index in range(length):
         initial_number += difference
         res.append(initial_number)
-    random_index = randint(0, 9)
+    random_index = get_random_number(start=0, finish=9)
     correct_answer = str(res[random_index])
     res[random_index] = ".."
     res = " ".join(str(i) for i in res)
