@@ -5,3 +5,6 @@
 /brain_games/scripts/__pycache__
 /brain_games/games/__pycache__
 /.vscode
+/.github
+/.idea
+/coverage

@@ -1,9 +1,6 @@
 # BRAIN GAMES
 
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Cekurok/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Cekurok/python-project-49/actions)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/44d5279d6374357b6f08/maintainability)](https://codeclimate.com/github/Cekurok/python-project-49/maintainability)
+### Hexlet tests and linter status: [![Actions Status](https://github.com/Cekurok/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Cekurok/python-project-49/actions)[![Maintainability](https://api.codeclimate.com/v1/badges/44d5279d6374357b6f08/maintainability)](https://codeclimate.com/github/Cekurok/python-project-49/maintainability)
 
 ## The package contains five simple mathematics quiz games:
 
@@ -14,19 +11,49 @@
 * Prime number brain-prime
 
 ## Installation
-
-'poetry install'
-
+```bash
+poetry install
+```
 ## How it works
 ### brain-even gameplay:
-[![asciicast](https://asciinema.org/a/Pvb0d1CbNemQFVGtkNblClP9j.svg)](https://asciinema.org/a/Pvb0d1CbNemQFVGtkNblClP9j)
+Start game
+```bash
+brain-even
+```
+
+Example game:
+[![asciicast](https://asciinema.org/a/NwM2SxBY2SfuIZlom9hQE3pcn.svg)](https://asciinema.org/a/NwM2SxBY2SfuIZlom9hQE3pcn)
 
 ### brain-calc gameplay:
-[![asciicast](https://asciinema.org/a/3qrAfNnegpvuefRbfPwnAZnK4.svg)](https://asciinema.org/a/3qrAfNnegpvuefRbfPwnAZnK4)
+Start game
+```bash
+brain-calc
+```
+
+Example game:
+[![asciicast](https://asciinema.org/a/nyO4dYC4mCJzHIQCCi2OvuGtj.svg)](https://asciinema.org/a/nyO4dYC4mCJzHIQCCi2OvuGtj)
 ### brain-gcd gameplay:
-[![asciicast](https://asciinema.org/a/4KF6ozkbXx5X930YlEQLlb5EF.svg)](https://asciinema.org/a/4KF6ozkbXx5X930YlEQLlb5EF)
+Start game
+```bash
+brain-gcd
+```
+
+Example game:
+[![asciicast](https://asciinema.org/a/4ao9CYveeyXUcszhaB0YTLNEk.svg)](https://asciinema.org/a/4ao9CYveeyXUcszhaB0YTLNEk)
 
 ### brain-progression gameplay:
-[![asciicast](https://asciinema.org/a/7zxX2U5fDiNiQK7odzimgdJyT.svg)](https://asciinema.org/a/7zxX2U5fDiNiQK7odzimgdJyT)
+Start game
+```bash
+brain-progression
+```
+
+Example game:
+[![asciicast](https://asciinema.org/a/v6TRi4n0YtW04GSelP0uGPXzF.svg)](https://asciinema.org/a/v6TRi4n0YtW04GSelP0uGPXzF)
 ### brain-prime gameplay:
-[![asciicast](https://asciinema.org/a/bbnjntofbzSidZDfcT56zmNhP.svg)](https://asciinema.org/a/bbnjntofbzSidZDfcT56zmNhP)
+Start game
+```bash
+brain-prime
+```
+
+Example game:
+[![asciicast](https://asciinema.org/a/4D8ymD820fqu2B5iYFZQ2zelJ.svg)](https://asciinema.org/a/4D8ymD820fqu2B5iYFZQ2zelJ)

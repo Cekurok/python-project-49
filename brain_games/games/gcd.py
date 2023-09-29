@@ -1,24 +1,16 @@
-from brain_games.core import get_answer_by_user
+import math
+from brain_games.core import get_answer_by_user, print_question
 from brain_games.utils import get_random_number
 
 
-DESCRIPTION = 'Find the greatest common divisor of given numbers.'
-
-
-def gcd(first_number, second_number):
-    while first_number != second_number:
-        if first_number > second_number:
-            first_number = first_number - second_number
-        else:
-            second_number = second_number - first_number
-    return second_number
+game_rules = "Find the greatest common divisor of given numbers."
 
 
 def make_question():
     first_number = get_random_number()
     second_number = get_random_number()
-    print(f'Question: {first_number} {second_number}')
+    print_question(first_number, second_number)
     user_answer = get_answer_by_user()
-    correct_result = gcd(first_number, second_number)
+    correct_result = math.gcd(first_number, second_number)
     is_valid_answer = int(user_answer) == correct_result
     return is_valid_answer, user_answer, correct_result

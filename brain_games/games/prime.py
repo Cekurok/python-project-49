@@ -1,25 +1,25 @@
-from math import sqrt
-from brain_games.core import get_answer_by_user
+from brain_games.core import get_answer_by_user, print_question
 from brain_games.utils import get_random_number
 
 
-DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+game_rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(num):
-    i = 2
-    while i <= sqrt(num):
-        if num % i == 0:
+def is_prime(n):
+    if n == 2 or n == 3:
+        return True
+    if n % 2 == 0 or n < 2:
+        return False
+    for i in range(3, int(n ** 0.5) + 1, 2):
+        if n % i == 0:
             return False
-        i += 1
     return True
 
 
 def make_question():
     even_number = get_random_number(start=2, finish=99)
-    print(f'Question: {even_number}')
+    print_question(even_number)
     answer = get_answer_by_user()
-    result = is_prime(even_number)
-    result = "yes" if result else "no"
+    result = "yes" if is_prime(even_number) else "no"
     is_valid_answer = answer == result
     return is_valid_answer, answer, result
