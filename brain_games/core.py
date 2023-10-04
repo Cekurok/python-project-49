@@ -2,7 +2,7 @@ import prompt
 
 
 def print_question(*values):
-    text = "Question: "
+    text = "Question:"
     for va in values:
         text = f"{text} {va}"
     print(text)
