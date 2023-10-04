@@ -5,6 +5,7 @@ from brain_games.utils import get_random_number
 game_rules = "What number is missing in the progression?"
 length = 10
 
+
 def make_question():
     res = []
     initial_number = get_random_number(start=0, finish=50)
